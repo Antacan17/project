@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add space between the logo and text */
+}
+
+.navbar img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar h1 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.navbar nav a:hover {
+    color: #6a5acd;
+}
+
+.navbar nav a.active {
+    color: #6a5acd;
+}
+
+.navbar .login-btn {
+    background-color: #074799;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.navbar .login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 23px; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow {
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    background: none;
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Align navbar items to the left */
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 10px ;
+        margin-left: -3px;
+        width: 100%;
+        display: none;
+        align-items: flex-start; /* Ensure nav items align left */
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+        text-align: left; /* Align text to the left */
+    }
+
+    .dropdown-content {
+        position: static;
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .navbar .login-btn {
+        margin-left: 10px;
+        width: 10%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 14px;
+    }
+
+    .navbar img {
+        height: 30px;
+    }
+
+    .navbar nav a {
+        font-size: 10px;
+    }
+
+    .dropdown-content a {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+.carousel {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    background-color: #d3d3d3;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-inner .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.carousel .arrow.left {
+    left: 10px;
+}
+
+.carousel .arrow.right {
+    right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel {
+        height: 146px;
+        width: 500px;
+    }
+
+    .carousel-inner .slide {
+        min-width: 100%;
+    }
+
+    .carousel .arrow {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 150px;
+    }
+
+    .carousel .arrow {
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.item {
+    text-align: center;
+    width: 100px;
+    margin-bottom: 20px; /* Add space between items */
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.circle img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .item {
+        width: 120px; /* Adjust item width for medium screens */
+    }
+
+    .circle img {
+        width: 80px;
+        height: 80px; /* Adjust image size for medium screens */
+    }
+
+    .text {
+        font-size: 12px; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .item {
+        width: 140px; /* Adjust item width for smaller screens */
+        margin: 10px; /* Space between items */
+    }
+
+    .circle img {
+        width: 70px;
+        height: 70px; /* Adjust image size for smaller screens */
+    }
+
+    .text {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .item {
+        width: 160px; /* Adjust item width for very small screens */
+        margin: 10px;
+    }
+
+    .circle img {
+        width: 60px;
+        height: 60px; /* Adjust image size for very small screens */
+    }
+
+    .text {
+        font-size: 10px; /* Adjust font size for very small screens */
+    }
+}

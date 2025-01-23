@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coba.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img 
+                src="logo denpasar.png" 
+                alt="Logo of PPID Kota Denpasar" 
+                height="40" 
+                width="40" 
+            />
+            <h1>PPID Kota Denpasar</h1>
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <nav>
+            <a class="active" href="homeee.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Profil <span class="arrow">&#9206;</span></a>
+                <div class="dropdown-content">
+                    <a href="Profil.html">Profil</a>
+                    <a href="Struktur.html">Struktur</a>
+                    <a href="Tugas.html">Tugas</a>
+                    <a href="Dasar hukum.html">Dasar Hukum</a>
+                    <a href="Visi Misi.html">Visi Misi</a>
+                    <a href="Maklumat.html">Maklumat</a>
+                    <a href="SK Penetapan.html">SK Penetapan</a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-Informasi">
+                <a class="dropbtn" href="javascript:void(0)">Informasi <span class="arrow">&#9206;</span></a>
+                <div class="dropdown-content">
+                    <a href="SK penetapan (2).pdf">SK Penetapan Informasi Dikecualikan</a>
+                    <a href="DIP 2024.pdf">Daftar Informasi Publik</a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-Standar-Layanan">
+                <a class="dropbtn" href="javascript:void(0)">Standar Layanan <span class="arrow">&#9206;</span></a>
+                <div class="dropdown-content">
+                    <a href="statusinformasi.html">Tata cara permohonan informasi publik</a>
+                    <a href="keberatan.html">Tata cara pengajuan keberatan</a>
+                    <a href="pengajuan permohonan sengketa.html">Tata cara pengajuan permohonan penyelesaian sengketa ke
+                        komisi informasi</a>
+                    <a href="waktu.html">Waktu Pelayanan</a>
+                    <a href="biaya.html">Biaya</a>
+                    <a href="SOP.html">SOP</a>
+                    <a href="Alasan yang digunakan.html">Alasan yang digunakan pemohon informasi mengajukan
+                        keberatan</a>
+                </div>
+            </div>
+            <a href="permohonan.html">Prosedur permohonan informasi publik</a>
+            <div class="dropdown dropdown-situs-terkait">
+                <a class="dropbtn" href="javascript:void(0)">Situs Terkait<span class="arrow">&#9206;</span></a>
+                <div class="dropdown-content">
+                    <a href="https://tangkalhoax.denpasarkota.go.id/">Tangkal dan Analisa Berita Hoax (Taboo)</a>
+                    <a href="https://ki.baliprov.go.id/">Komisi Informasi Provinsi Bali</a>
+                    <a href="https://jdih.denpasarkota.go.id/">JDIH Kota Denpasar</a>
+                    <a href="https://denpasarkota.go.id/">Website Resmi Kota Denpasar</a>
+                    <a href="https://ppid.baliprov.go.id/">PPID Provinsi Bali</a>
+                </div>
+            </div>
+            <a class="login-btn" href="login.html">Login</a>
+        </nav>
+    </header>
+
+
+    <div class="carousel" data-aos="zoom-in" data-aos-duration="1700">
+        <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+        <div class="carousel-inner" id="carouselInner">
+            <div class="slide">
+                <img src="foto/3 REVISI.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="foto/1 REVISI.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="foto/2 REVISI.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="foto/3 REVISI.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="foto/1 REVISI.png" alt="Slide 1">
+            </div>
+        </div>
+        <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+
+
+
+    <div class="container" data-aos="zoom-in-up" data-aos-duration="1700">
+        <div class="item">
+            <a href="#">
+                <div class="circle">
+                    <img alt="Informasi Publik" src="logo/Informasi  Publik.png" />
+                </div>
+                <div class="text">Informasi Publik</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="pip.html">
+                <div class="circle">
+                    <img alt="Permohonan Informasi Publik" src="logo/Permohonan  Informasi Publik.png" />
+                </div>
+                <div class="text">Permohonan Informasi Publik</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="si.html">
+                <div class="circle">
+                    <img alt="Cek Status Permohonan Informasi Publik" src="logo/Cek Status Permohonan  Informasi Publik.png" />
+                </div>
+                <div class="text">Cek Status Permohonan Informasi Publik</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <div class="circle">
+                    <img alt="Mekanisme Layanan Informasi Publik" src="logo/Mekanisme Layanan  Informasi Publik.png" />
+                </div>
+                <div class="text">Mekanisme Layanan Informasi Publik</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <div class="circle">
+                    <img alt="Statistik Layanan Informasi Publik" src="logo/Statistik Layanan  Informasi Publik.png" />
+                </div>
+                <div class="text">Statistik Layanan Informasi Publik</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <div class="circle">
+                    <img alt="Portal Data Terbuka" src="logo/Portal Data Terbuka.png" />
+                </div>
+                <div class="text">Portal Data Terbuka</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.navbar nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+
+        // Dropdown Logic
+        document.querySelectorAll('.dropdown .dropbtn').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+                    if (dropdown !== btn.nextElementSibling) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+
+                const content = btn.nextElementSibling;
+                const arrow = btn.querySelector('.arrow');
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    arrow.innerHTML = '&#9206;'; 
+                } else {
+                    content.style.display = 'block';
+                    arrow.innerHTML = '&#9207;'; 
+                }
+            });
+        });
+
+        // Close Dropdowns When Clicking Outside
+        document.addEventListener('click', function (e) {
+            const isDropdown = e.target.closest('.dropdown');
+            if (!isDropdown) {
+                document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+
+
+
+
+
+        let currentSlide = 1;
+        const carouselInner = document.getElementById('carouselInner');
+        const slides = document.querySelectorAll('.carousel-inner .slide');
+        const totalSlides = slides.length;
+        let autoSlideInterval;
+
+        function updateSlides() {
+            const offset = -currentSlide * 100;
+            carouselInner.style.transform = `translateX(${offset}%)`;
+
+            setTimeout(() => {
+                if (currentSlide === totalSlides - 1) {
+                    currentSlide = 1;
+                    carouselInner.style.transition = "none";
+                    carouselInner.style.transform = `translateX(-100%)`;
+                } else if (currentSlide === 0) {
+                    currentSlide = totalSlides - 2;
+                    carouselInner.style.transition = "none";
+                    carouselInner.style.transform = `translateX(-${(totalSlides - 2) * 100}%)`;
+                }
+            }, 500);
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                carouselInner.style.transition = "transform 0.5s ease-in-out";
+                updateSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                carouselInner.style.transition = "transform 0.5s ease-in-out";
+                updateSlides();
+            }
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5100);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        carouselInner.style.transition = "none";
+        carouselInner.style.transform = `translateX(-100%)`;
+
+        startAutoSlide();
+
+        document.querySelector('.carousel').addEventListener('mouseenter', stopAutoSlide);
+        document.querySelector('.carousel').addEventListener('mouseleave', startAutoSlide);
+    </script>
+</body>
+</html>

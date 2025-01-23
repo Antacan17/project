@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive News Slider</title>
+    <style>
+        /* Container */
+        .max-container-brt {
+            width: 90%;
+            max-width: 1000px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            margin-top: 80px;
+        }
+    
+        /* Title */
+        .max-title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            margin-left: 25px;
+        }
+    
+        .max-title::after {
+            content: '';
+            display: block;
+            width: 85px;
+            height: 2px;
+            background-color: #FF7F3E;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    
+        /* Content Slider */
+        .max-content-slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+    
+        .max-slide {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row; /* Ensure text is always on the right */
+            padding: 20px;
+            text-align: left;
+            flex-wrap: nowrap; /* Prevent wrapping */
+        }
+    
+        .max-slide img {
+            width: 220px;
+            height: 270px;
+            background-color: #ddd;
+            border-radius: 13px;
+            margin-right: 20px;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+    
+        .max-text-3, .max-text-4, .max-text-5 {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+            max-width: 600px;
+        }
+    
+        /* Navigator */
+        .max-navigator {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .max-dot {
+            height: 6px;
+            width: 6px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+    
+        .max-active {
+            background-color: #717171;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .max-slide img {
+                width: 180px;
+                height: 220px;
+            }
+    
+            .max-title {
+                font-size: 26px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .max-slide img {
+                width: 150px;
+                height: 200px;
+            }
+    
+            .max-title {
+                font-size: 24px;
+                margin-left: 15px;
+            }
+    
+            .max-text-3, .max-text-4, .max-text-5 {
+                font-size: 16px;
+            }
+    
+            .max-container-brt {
+                width: 75%;
+                padding: 15px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .max-slide {
+                flex-direction: row; /* Always row direction for small screens */
+                justify-content: space-between; /* Ensure space between image and text */
+            }
+    
+            .max-slide img {
+                width: 130px;
+                height: 180px;
+            }
+    
+            .max-text-3, .max-text-4, .max-text-5 {
+                font-size: 14px;
+                margin-top: 0;
+            }
+    
+            .max-container-brt {
+                width: 80%;
+                padding: 10px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="max-container-brt" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="110">
+        <div class="max-title">
+            Berita
+        </div>
+        <div class="max-content-slider">
+            <div class="max-slide">
+                <img alt="Placeholder image" src="foto/berita Wujudkan_Transparansi_Dan_Akuntabilitas__PDAM_Denpasar.png" width="100"/>
+                <div class="max-text-3">
+                    Mewujudkan transparansi, akuntabilitas dan efisiensi sebuah hal penting bagi Perusahaan Daerah Air Minum (PDAM) Kota Denpasar dalam capaian daya saing mewujudkan pelayanan prima kepada masyarakat. Melihat hal tersebut yang tak terlepas dalam keberlanjutan program yang dimiliki PDAM Denpasar, pada Jumat (20/1) melakukan pengesahan, pendatanganan serta sosialisasi Good Corporate Governance (GCG).
+                </div>
+            </div>
+            <div class="max-slide">
+                <img alt="Placeholder image" src="foto/beritawujudkan-denpasar-semakin-akuntabel-dan-trasparan.png" width="100"/>
+                <div class="max-text-4">
+                    Untuk memberikan pemahaman mengenai Keterbukaan Informasi Publik, Dampak dan Manfaat Bagi Publik, Tersosialisasikannya tahapan Monitoring dan Evaluasi Keterbukaan Informasi Badan Publik tahun 2024 dan mewujudkan akuntabilitasi, transparansi kinerja pemerintah Dinas Kominfos Kota Denpasar memfasilitasi bimtek “Pengisian Kuisioner Monev Keterbukaan Informasi Publik (KIP) Tahun 2024” yang diinisiasi oleh Komisi Informasi Provinsi Bali pada Jumat 6 september 2024 di Ruang Sewaka Kertha Loka Graha Sewakadarma Lumintang.
+                </div>
+            </div>
+            <div class="max-slide">
+                <img alt="Placeholder image" src="foto/beritaPemkot Gelar Festival Pasar Tradisional_.png" width="100"/>
+                <div class="max-text-5">
+                    Lakukan Perbaikan, Pertahankan Eksistensi Pasar
+                    Program revitalisasi pasar tradisional dilakukan Pemerintah Kota Denpasar sejak beberapa tahun yang lalu telah mampu mempertahankan eksistensi pasar tradisional di tengah maraknya kehadiran pasar modern saat ini.
+                </div>
+            </div>
+        </div>
+        <div class="max-navigator">
+            <span class="max-dot"></span>
+            <span class="max-dot"></span>
+            <span class="max-dot"></span>
+        </div>
+    </div>
+
+    <script>
+        let maxSlideIndex = 0;
+        const maxSlides = document.querySelectorAll('.max-slide');
+        const maxDots = document.querySelectorAll('.max-dot');
+
+        function maxShowSlide(index) {
+            maxSlides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'flex' : 'none';
+            });
+            maxDots.forEach((dot, i) => {
+                dot.classList.remove('max-active');
+                if (i === index) {
+                    dot.classList.add('max-active');
+                }
+            });
+        }
+
+        function maxNextSlide() {
+            maxSlideIndex = (maxSlideIndex + 1) % maxSlides.length;
+            maxShowSlide(maxSlideIndex);
+        }
+
+        function maxCurrentSlide(index) {
+            maxSlideIndex = index;
+            maxShowSlide(maxSlideIndex);
+        }
+
+        setInterval(maxNextSlide, 13000);  // Change slide every 13 seconds
+
+        maxDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => maxCurrentSlide(index));
+        });
+
+        maxShowSlide(maxSlideIndex);
+    </script>
+
+</body>
+</html>
